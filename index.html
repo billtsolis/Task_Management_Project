@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task List</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Task List</h1>
+
+<!-- Button to add a new task -->
+<button id="addButton">Add Task</button>
+
+<!-- Modal for adding a new task -->
+<div id="modal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<!-- Form to add a new task -->
+<form id="taskForm">
+  <!-- Add Description -->
+  <div class="form-group">
+  <label for="taskDescription">Description:</label>
+  <input type="text" id="taskDescription" name="description" required>
+  </div>
+  <!-- Add Priority -->
+  <div class="form-group">
+  <label for="taskPriority">Priority:</label>
+  <select id="taskPriority" name="priority" required>
+  <option value="">Select priority</option>
+  <option value="Low">Low</option>
+  <option value="Medium">Medium</option>
+  <option value="High">High</option>
+  </select>
+  </div>
+  <!-- Add Status -->
+  <div class="form-group">
+  <label for="taskStatus">Status:</label>
+  <select id="taskStatus" name="status" required>
+  <option value="">Select status</option>
+  <option value="To do">To do</option>
+  <option value="In progress">In progress</option>
+  <option value="Done">Done</option>
+  </select>
+  </div>
+
+<button type="submit">Add Task</button>
+
+</form>
+</div>
+</div>
+
+<!-- Modal for editing a task -->
+<div id="editModal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+
+<!-- Form to edit a task -->
+<form id="editForm">
+  <div class="form-group">
+  <label for="editDescription">Description:</label>
+  <input type="text" id="editDescription" name="description" required>
+  </div>
+  <!--Edit Priority -->
+  <div class="form-group">
+  <label for="editPriority">Priority:</label>
+  <select id="editPriority" name="priority" required>
+  <option value="">Select priority</option>
+  <option value="Low">Low</option>
+  <option value="Medium">Medium</option>
+  <option value="High">High</option>
+  </select>
+  </div>
+<!--Edit Status -->
+  <div class="form-group">
+  <label for="editStatus">Status:</label>
+  <select id="editStatus" name="status" required>
+  <option value="">Select status</option>
+  <option value="To do">To do</option>
+  <option value="In progress">In progress</option>
+  <option value="Done">Done</option>
+  </select>
+  </div>
+
+<button type="submit">Update Task</button>
+
+</form>
+</div>
+</div>
+
+<!-- List to display tasks -->
+<ul id="taskList"></ul>
+
+<!-- JavaScript code -->
+<script src="script.js"></script>
+</body>
+</html>
