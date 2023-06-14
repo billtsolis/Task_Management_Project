@@ -9,11 +9,11 @@ Task Management is a web application that allows users to manage their tasks. It
 To run the application, you'll need to have Node.js and MongoDB installed. You'll also need to install the required dependencies by running npm instal in the project directory. Then, you can start the server by running node server.js in the terminal. The MongoDB database running locally on the default port (27017). If you have a different MongoDB setup, you may need to modify the connection string in the server.js.
 
 ## Installation
-1.Install the required dependencies:
+- Install the required dependencies:
 npm install
-2.Start the application:
+- Start the application:
 node server.js
-3.Open your web browser and navigate to http://localhost:3000 to access the application.
+- Open your web browser and navigate to http://localhost:3000 to access the application.
 
 ## Usage
 - Click the "Add Task" button to open the modal for adding a new task.
