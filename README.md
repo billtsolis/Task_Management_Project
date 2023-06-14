@@ -1,6 +1,6 @@
 # Task_Management_Project-
 
-A simple task management application built with HTML, CSS, JavaScript, and MongoDB.
+A task management application built with HTML, CSS, JavaScript, and MongoDB.
 
 ## Description
 
